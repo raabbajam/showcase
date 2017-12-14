@@ -1,0 +1,52 @@
+i#logo {
+    background: blue;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 103px;
+    text-align: center;
+    color: white;
+    box-shadow: 5px 5px 12px #777;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    overflow: hidden;
+}
+
+body {
+    height: max-content;
+}
+
+#logo:before{
+    transform: translate(-50%);
+    position: absolute;
+    animation: fly 3s infinite;
+}
+@keyframes fly {
+    0% {
+        transform: translate(-50%) scale(1) rotate(0);
+    }
+    30% {
+        transform: translate(300%) scale(1) rotate(0);
+        color: white;
+    }
+    31% {
+        transform: translate(300%) scale(0.5) rotate(180deg);
+        color: black;
+    }
+    60% {
+        transform: translate(-300%) scale(0.5) rotate(180deg);
+        color: black;
+    }
+    61% {
+        transform: translate(-300%) scale(1) rotate(0);
+        color: white;
+    }
+    100% {
+        transform: translate(-50%) scale(1) rotate(0);
+    }
+}
