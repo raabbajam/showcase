@@ -1,5 +1,4 @@
 i#logo {
-    background: #6868ff;
     display: block;
     width: 100px;
     height: 100px;
@@ -7,14 +6,13 @@ i#logo {
     line-height: 103px;
     text-align: center;
     color: white;
-    box-shadow: 5px 5px 12px #777;
     position: absolute;
     top: 50%;
     left: 50%;
     font-size: 50px;
     transform-origin: center;
     overflow: hidden;
-    animation: rotate 9s infinite, blink 3s infinite;
+    animation: rotate 30s infinite, blink 3s infinite;
     border: none;
 }
 
@@ -36,11 +34,11 @@ body {
     }
     31% {
         transform: translate(50%, 10px) scale(0.67) rotate(180deg);
-        color: #6868ff;
+        color: #777;
     }
     60% {
         transform: translate(-250%, 10px) scale(0.67) rotate(180deg);
-        color: #6868ff;
+        color: #777;
     }
     61% {
         transform: translate(-300%, 0px) scale(1) rotate(0);
@@ -64,10 +62,13 @@ body {
 
 @keyframes blink {
     0% {
-        background: #6868ff;
+        background: #4f4f9a;
     }
     50% {
-        background: white;
+        background: #b3b3ea;
+    }
+    100% {
+        background: #4f4f9a;
     }
 
 }
